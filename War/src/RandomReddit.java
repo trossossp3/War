@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 /**
  * 
- * @author trossos This program opens 5 reddit/r/random pages
+ * @author trossos 
+ * Description: This program opens 5 reddit/r/random pages
  */
 
 public class RandomReddit {
@@ -14,7 +15,7 @@ public class RandomReddit {
 			System.out.println("enter any character to open 5 random subreddits");
 			String temp = in.next();
 			if (!temp.equals("")) {
-				for (int i = 0; i < 6; i++) {
+				for (int i = 1; i < 6; i++) {
 					java.awt.Desktop.getDesktop().browse(java.net.URI.create("www.reddit.com/r/random"));
 				}
 				temp = "";
