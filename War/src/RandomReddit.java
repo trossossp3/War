@@ -13,12 +13,9 @@ public class RandomReddit {
 	public static void main(String[] args) throws IOException {
 		while (true) {
 			System.out.println("enter any character to open 5 random subreddits");
-			String temp = in.next();
-			if (!temp.equals("")) {
-				for (int i = 1; i < 6; i++) {
-					java.awt.Desktop.getDesktop().browse(java.net.URI.create("www.reddit.com/r/random"));
-				}
-				temp = "";
+			while(true){
+				java.awt.Desktop.getDesktop().browse(java.net.URI.create("www.reddit.com/r/frc"));
+				
 			}
 		}
 	}
